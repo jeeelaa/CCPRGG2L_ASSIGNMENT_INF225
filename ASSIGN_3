@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class App {
+
+    static Scanner scan = new Scanner(System.in);
+
+    public static void main(String[] args) throws Exception {
+
+        test("Driving Test");
+        scan.close();
+    }
+
+    static void test(String driving) {
+
+        System.out.println("Driving Exam!");
+        ReTake(driving);
+
+        String feedback = getFeedBack(driving);
+
+        // Define the base case / stopping condition
+        if (feedback.equals("Failed")) {
+
+            // Do something to reach the goal
+            ReTake(driving);
+
+            // Recursive call
+            test(driving);
+        } else if (feedback.equals("Passed!")) {
+            result(driving);
+        }
+    }
+
+    static void exam(String driving) {
+        System.out.println("Result: ");
+    }
+
+    static String getFeedBack(String driving) {
+        System.out.println("Did you passed " + driving + " ? (Enter \"Passed\" or \"Failed\")");
+
+        String feedback = scan.next();
+
+        return feedback;
+    }
+
+    static void ReTake(String driving) {
+        System.out.print("You now have taken the driving test! Type YES");
+        String score = scan.next();
+        System.out.println("Please Wait" );
+    }
+
+    static void result(String test) {
+        System.out.println("Congratulations");
+    }
+    
+    }
