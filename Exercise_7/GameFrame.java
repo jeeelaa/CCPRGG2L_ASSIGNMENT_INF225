@@ -1,6 +1,6 @@
 import javax.swing.JFrame;
 
-public class Gameframe extends JFrame {
+public class GameFrame extends JFrame {
 
     GameFrame() {
 
