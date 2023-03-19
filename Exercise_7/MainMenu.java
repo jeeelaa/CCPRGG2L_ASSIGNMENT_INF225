@@ -14,7 +14,7 @@ public class MainMenu extends JFrame {
         JLabel imageLabel = new JLabel();
 
         // Image downloaded from the internet
-        ImageIcon BGImage = new ImageIcon ("snake gesture.gif");
+        ImageIcon BGImage = new ImageIcon ("snake.gif");
 
         // Set image to label 
         imageLabel.setIcon(BGImage);
