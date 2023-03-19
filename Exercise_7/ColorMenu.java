@@ -7,7 +7,7 @@ import javax.swing.event.ListSelectionListener;
 
 import java.awt.*;
 
-public class Colormenu extends JFrame{
+public class ColorMenu extends JFrame{
 
     // Color name array
     private String[] colorNameArray = {"BLUE", "GRAY", "GREEN", "BLACK"};
