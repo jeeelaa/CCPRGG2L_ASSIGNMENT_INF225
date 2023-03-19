@@ -7,7 +7,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Mainmenu extends JFrame {
+public class MainMenu extends JFrame {
     MainMenu(){
 
         // Jlabel
